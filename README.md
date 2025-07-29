@@ -2,6 +2,8 @@
 
 This project is a demonstration of various authentication mechanisms implemented using Spring Boot and Spring Security. Each authentication method is isolated into its own security filter chain and has its own set of UI pages.
 
+![Application User Interface](images/spring-authentication-ui.png)
+
 ## Features
 
 This application showcases the following authentication methods:
