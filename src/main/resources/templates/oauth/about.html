@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About OAuth 2.0 Authentication</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-menu">
+            <a th:href="@{/}">← Back to Home</a>
+            <a th:href="@{/oauth/home}">OAuth Home</a>
+            <a th:href="@{/shared/resource1}">Shared Resources</a>
+        </nav>
+        
+        <h1>OAuth 2.0 Authentication</h1>
+        
+        <div class="info-section">
+            <h3>Overview</h3>
+            <p>OAuth 2.0 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, or Google. It works by delegating user authentication to the service that hosts the user account, and authorizing third-party applications to access the user account.</p>
+            
+            <h3>Implementation Details</h3>
+            <ul>
+                <li><strong>Flow:</strong> Authorization Code Grant flow is commonly used for web applications.</li>
+                <li><strong>Provider:</strong> Requires an OAuth 2.0 provider (e.g., Google, GitHub).</li>
+                <li><strong>Tokens:</strong> Uses access tokens to access protected resources.</li>
+            </ul>
+            
+            <h3>Use Cases</h3>
+            <ul>
+                <li>Third-party application integration ("Login with Google").</li>
+                <li>Mobile and single-page applications.</li>
+                <li>APIs that need to access user data from other services.</li>
+            </ul>
+        </div>
+        
+        <div class="navigation">
+            <a th:href="@{/oauth/home}" class="btn">Back to OAuth Home</a>
+            <a th:href="@{/}" class="btn btn-secondary">Try Other Methods</a>
+        </div>
+    </div>
+</body>
+</html>
